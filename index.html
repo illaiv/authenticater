@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="login"></p>
+    <p class ="badlog"></p>
+    <script>
+
+   let username = "admin";
+    let password = "secret";
+
+       let userGuess = prompt("Input the username: ");
+       let passwordGuess = prompt("Input the password: ");
+
+       console.log(userGuess);
+       console.log(passwordGuess);
+
+   function checkInfo (userID, pass) {
+if (userID === username && pass === password) {
+    console.log("Login complete!");
+    let loginText = document.querySelector(".login");
+    loginText.innerText = "welcome Admin";
+
+    document.querySelector(".login")
+} else {
+    console.log("BAD LOGIN CREDENTIALS");
+    let badLogin = document.querySelector(".badlog");
+    badLogin.innerText = "BAD LOGIN CREDENTIALS";
+}
+   }
+checkInfo(userGuess, passwordGuess);
+    </script>
+</body>
+</html>
